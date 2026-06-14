@@ -28,6 +28,65 @@
   color: #61dafb;
 }
 
+.nav-container{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+/* Navbar / Header styles */
+.site-header{
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.site-nav{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+}
+.logo img{
+  height: 36px;
+  display: block;
+}
+.nav{flex:1;margin-left:24px}
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li{font-size:14px}
+.nav-links a{
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.nav-links a:hover{color:#e5b800}
+.nav-cta .login{
+  color:#222;
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:20px;
+  border:1px solid transparent;
+  font-weight: 600;
+  font-size: 14px;
+}
+.nav-cta .login:hover{background:#f6f6f6}
+
+@media (max-width: 760px){
+  .nav-links{display:none}
+  .logo img{height:32px}
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
