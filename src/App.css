@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -95,3 +93,111 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 687px;
+  }
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Extra extra large devices (≥1400px) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.hero {
+  background: #495e57;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero-text {
+  max-width: 400px;
+  padding-left:24px ;
+}
+
+.hero-text h1 {
+  margin: unset;
+  color: #f4ce14;
+  margin-bottom: 0;
+  font-size: 48px;
+}
+
+.hero-text h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.hero-text button {
+  background: #f4ce14;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-image {
+  position: absolute;
+  right: 56px;
+  top: 20px;
+}
+
+.hero-image img {
+  width: 230px;
+  height: 300px;
+  border-radius: 16px;
+}
+
+/* Booking form styles */
+.booking-form {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 16px;
+  border-radius: 8px;
+}
+.booking-form label { display:block; margin-bottom:6px; font-weight:600 }
+.booking-form input, .booking-form select, .booking-form button {
+  width:100%; padding:8px 10px; border-radius:6px; border:1px solid #ddd; box-sizing:border-box;
+}
+.booking-form button { background:#f4ce14; border:none; font-weight:700; cursor:pointer }
