@@ -12,7 +12,7 @@ const Main = () => {
   const submitForm = async (formData) => {
     try {
       if (typeof submitAPI === 'function') {
-        const ok = await submitAPI(formData)
+        const ok = await window.submitAPI(formData)
         if (ok) {
           navigate('/booking/confirmed')
           return true

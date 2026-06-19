@@ -4,7 +4,7 @@ export const initializeTimes = () => {
     if (typeof fetchAPI === 'function') {
       // use today's date if no date provided
       const today = new Date().toISOString().split('T')[0]
-      return fetchAPI(today)
+      return window.fetchAPI(today)
     }
   } catch (e) {
     // fallthrough to static fallback
@@ -17,7 +17,7 @@ export const updateTimes = (state, action) => {
     case 'date':
       try {
         if (typeof fetchAPI === 'function') {
-          return fetchAPI(action.date)
+          return window.fetchAPI(action.date)
         }
       } catch (e) {
         // fallthrough

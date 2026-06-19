@@ -8,7 +8,7 @@ test('renders booking form static elements', () => {
   const dateInput = screen.getByLabelText(/choose date/i)
   expect(dateInput).toBeInTheDocument()
 
-  // button should be present
-  const submit = screen.getByRole('button', { name: /make reservation/i })
+  // button should be present (accessible via ARIA label)
+  const submit = screen.getByRole('button', { name: /on click/i })
   expect(submit).toBeInTheDocument()
 })

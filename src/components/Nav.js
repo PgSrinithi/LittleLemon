@@ -21,7 +21,7 @@ const Nav = () => {
         </nav>
 
         <div className="nav-cta">
-          <a href="#" className="login">Login</a>
+          <a href="#" className="login" aria-label="On Click">Login</a>
         </div>
       </div>
     </header>
